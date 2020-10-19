@@ -7,6 +7,8 @@ public class CFCCalculator extends Calculator {
 
     @Override
     public double calculate(double weight, double radius) {
-        return 2.71;
+        double w = 4 * weight;
+        double v = Math.pow(4 * radius / Math.sqrt(2), 3);
+        return (w / v) / (6.02214076 * 100);
     }
 }
